@@ -1,0 +1,9 @@
+service: fake-store-api
+provider: 
+  name: aws
+  stage: dev
+  region: us-west-2
+  runtime: nodejs18.x
+
+resources:
+  - ${file(resources/dynamo.yml)}
