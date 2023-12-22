@@ -1,0 +1,65 @@
+deleteUserFavorite:
+  handler: service/deleteUserFavorite.handler
+  name: deleteUserFavorite
+  memorySize: 128
+  url:
+    cors: true
+  events:
+    - httpApi:
+        method: DELETE
+        path: /user/{userId}/favorite
+
+getProducts:
+  handler: service/getProducts.handler
+  name: getProducts
+  memorySize: 128
+  url:
+    cors: true
+  events:
+    - httpApi:
+        method: GET
+        path: /products
+
+getUser: 
+  handler: service/getUser.handler
+  name: getUser
+  memorySize: 128
+  url:
+    cors: true
+  events: 
+    - httpApi:
+        method: GET
+        path: /user/{userId}
+
+getUserFavorites: 
+  handler: service/getUserFavorites.handler
+  name: getUserFavorites
+  memorySize: 128
+  url:
+    cors: true
+  events: 
+    - httpApi:
+        method: GET
+        path: /user/{userId}/favorite
+
+putUser:
+  handler: service/putUser.handler
+  name: putUser
+  memorySize: 128
+  url:
+    cors: true
+  events:
+    - httpApi:
+        method: POST
+        path: /user
+
+putUserFavorites: 
+  handler: service/putUserFavorites.handler
+  name: putUserFavorites
+  memorySize: 128
+  url:
+    cors: true
+  events: 
+    - httpApi:
+        method: POST
+        path: /user/{userId}/favorite

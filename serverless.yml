@@ -4,6 +4,13 @@ provider:
   stage: dev
   region: us-west-2
   runtime: nodejs18.x
+  environment: ${file(resources/env.yml):environment}
+
+plugins: 
+  - serverless-offline
+
+functions:
+  - ${file(resources/functions.yml)}
 
 resources:
   - ${file(resources/dynamo.yml)}
