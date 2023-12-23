@@ -33,11 +33,11 @@ function query() {
   return ddbDocClient.send(command)
 }
 
-function getItem() {
-  const command = new GetCommand()
+function getItem(query) {
+  const command = new GetCommand(query)
   return ddbDocClient.send(command)
 }
 
 
 
-module.exports = { putItem }
+module.exports = { putItem, getItem, deleteItem, query }
