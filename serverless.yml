@@ -1,4 +1,9 @@
 service: fake-store-api
+
+package:
+  patterns:
+    - '!tmp/**'
+
 provider: 
   name: aws
   stage: dev
@@ -14,3 +19,4 @@ functions:
 
 resources:
   - ${file(resources/dynamo.yml)}
+  - ${file(resources/s3.yml)}

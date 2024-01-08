@@ -1,0 +1,212 @@
+[
+    {
+        "name": "AquaPure Shower Speaker",
+        "description": "A waterproof, Bluetooth-enabled speaker designed for use in the shower. Features a suction cup for easy attachment to shower walls and a battery life of 10 hours. Available in multiple colors including blue, pink, and green.",
+        "slogan": "Sing in the shower, rain or shine!",
+        "msrp": 2999,
+        "img": "00.png"
+    },
+    {
+        "name": "GlowStep Nightlight Slippers",
+        "description": "Comfortable slippers with built-in LED lights that activate in the dark. Made from soft, durable material with a non-slip sole. Ideal for nighttime walks around the house.",
+        "slogan": "Light up your steps, night and day!",
+        "msrp": 3499,
+        "img": "01.png"
+    },
+    {
+        "name": "BreezeBrace Portable Fan Bracelet",
+        "description": "A wrist-worn personal fan with adjustable speed settings. Lightweight and USB rechargeable. Perfect for outdoor activities on hot days.",
+        "slogan": "Coolness at hand, wherever you go!",
+        "msrp": 1999,
+        "img": "02.png"
+    },
+    {
+        "name": "SkyWrite Smart Pen",
+        "description": "A digital pen that captures your handwriting and transfers it to your device in real-time. Comes with a docking station for charging and syncing. Compatible with most smartphones and tablets.",
+        "slogan": "From paper to pixel in a flash!",
+        "msrp": 4999,
+        "img": "03.png"
+    },
+    {
+        "name": "FitFridge Smart Food Scale",
+        "description": "A smart kitchen scale that connects to an app to track nutritional information. Features a sleek, modern design with a clear LCD display. Supports voice commands for hands-free use.",
+        "slogan": "Weigh your way to wellness!",
+        "msrp": 3999,
+        "img": "04.png"
+    },
+    {
+        "name": "SunriseWake Alarm Clock",
+        "description": "An alarm clock that simulates sunrise for a natural waking experience. Features ambient sound options and a snooze function. Its compact design fits perfectly on any nightstand.",
+        "slogan": "Wake up with the sun, every day!",
+        "msrp": 2499,
+        "img": "05.png"
+    },
+    {
+        "name": "EcoBrew Reusable Coffee Pods",
+        "description": "Eco-friendly, reusable coffee pods compatible with most single-serve coffee machines. Made from stainless steel and easy to clean. Comes in a pack of four.",
+        "slogan": "Brew sustainably, one cup at a time!",
+        "msrp": 1499,
+        "img": "06.png"
+    },
+    {
+        "name": "Magnetix Wireless Charging Stand",
+        "description": "A sleek and modern wireless charging stand with magnetic alignment. Compatible with a range of devices. Features an LED charging indicator.",
+        "slogan": "Charge effortlessly, live wirelessly!",
+        "msrp": 2999,
+        "img": "07.png"
+    },
+    {
+        "name": "ZenGarden Mini Desktop Sandbox",
+        "description": "A miniature zen garden for your desk, complete with sand, rocks, and miniature tools. Helps reduce stress and increase focus. Perfect for office or home use.",
+        "slogan": "Find your zen, one grain at a time!",
+        "msrp": 1799,
+        "img": "08.png"
+    },
+    {
+        "name": "PicPerfect Instant Camera Printer",
+        "description": "A compact camera that instantly prints photos. Features multiple filters and a selfie mirror. Connects to your phone for digital copies.",
+        "slogan": "Capture moments, print memories!",
+        "msrp": 7999,
+        "img": "09.png"
+    },
+    {
+        "name": "HerbHero Indoor Garden Kit",
+        "description": "An all-in-one indoor gardening kit for growing herbs. Includes seeds, pots, and nutrient-rich soil. Features a built-in LED grow light.",
+        "slogan": "Grow your own flavor, right at home!",
+        "msrp": 4999,
+        "img": "10.png"
+    },
+    {
+        "name": "FlexFold Compact Travel Iron",
+        "description": "A compact, foldable travel iron with dual voltage for international use. Features a non-stick soleplate and three temperature settings. Lightweight and easy to pack.",
+        "slogan": "Stay sharp, wherever you go!",
+        "msrp": 2499,
+        "img": "11.png"
+    },
+    {
+        "name": "SonicPulse Ultrasonic Toothbrush",
+        "description": "An ultrasonic toothbrush with multiple brushing modes and a smart timer. Includes a charging base and travel case. Available in various colors.",
+        "slogan": "A deeper clean for a brighter smile!",
+        "msrp": 5999,
+        "img": "12.png"
+    },
+    {
+        "name": "TuneTrek Waterproof Earbuds",
+        "description": "Wireless, waterproof earbuds with superior sound quality. Features a long-lasting battery and a comfortable fit. Ideal for sports and outdoor activities.",
+        "slogan": "Unleash your beats, come rain or shine!",
+        "msrp": 7999,
+        "img": "13.png"
+    },
+    {
+        "name": "BlendGo Portable Smoothie Maker",
+        "description": "A portable, rechargeable blender for making smoothies on the go. Compact and lightweight, with a durable glass container. Easy to clean and use.",
+        "slogan": "Sip healthily, anywhere you go!",
+        "msrp": 3999,
+        "img": "14.png"
+    },
+    {
+        "name": "SafeStep Motion Sensor Night Lights",
+        "description": "Battery-operated, motion-sensor night lights that provide soft illumination. Perfect for hallways, stairs, and bathrooms. Easy to install with no wiring required.",
+        "slogan": "Step safely, even in the dark!",
+        "msrp": 1599,
+        "img": "15.png"
+    },
+    {
+        "name": "ChargeMate Multi-Device Charging Hub",
+        "description": "A charging hub that can power up to six devices simultaneously. Features a compact design with built-in cable management. Compatible with smartphones, tablets, and more.",
+        "slogan": "Power up your gadgets, all in one place!",
+        "msrp": 2999,
+        "img": "16.png"
+    },
+    {
+        "name": "EcoBag Reusable Shopping Totes",
+        "description": "Durable, reusable shopping bags made from eco-friendly materials. Compact and foldable for easy storage. Comes in a variety of vibrant colors and patterns.",
+        "slogan": "Shop smart, save the planet!",
+        "msrp": 999,
+        "img": "17.png"
+    },
+    {
+        "name": "PuzzlePro 3D Wooden Puzzle Kits",
+        "description": "Intricately designed 3D wooden puzzle kits for all ages. Promotes problem-solving skills and creativity. Available in various designs like animals, vehicles, and landmarks.",
+        "slogan": "Build, learn, and have fun!",
+        "msrp": 1999,
+        "img": "18.png"
+    },
+    {
+        "name": "HydraFlask Smart Water Bottle",
+        "description": "An insulated smart water bottle that tracks your hydration and glows to remind you to drink. Made from stainless steel, keeping drinks cold for up to 24 hours. Connects to a mobile app for hydration tracking.",
+        "slogan": "Hydrate smartly, stay healthy!",
+        "msrp": 3499,
+        "img": "19.png"
+    },
+    {
+        "name": "GreenThumb Window Garden Kit",
+        "description": "A compact window garden kit for growing herbs and small plants indoors. Includes suction cups for easy window attachment. Comes with seeds, soil, and a watering system.",
+        "slogan": "Grow greenery in any window!",
+        "msrp": 2999,
+        "img": "20.png"
+    },
+    {
+        "name": "CalmCandle LED Flameless Candles",
+        "description": "A set of flameless LED candles that mimic real flame movement. Remote-controlled with adjustable brightness and timer. Safe and smoke-free, ideal for setting a relaxing ambiance.",
+        "slogan": "Light without flame, calm without worry!",
+        "msrp": 2299,
+        "img": "21.png"
+    },
+    {
+        "name": "MiniMaker 3D Printing Pen",
+        "description": "A 3D printing pen that lets you draw in the air. Comes with eco-friendly PLA filament. Perfect for creative projects and crafting.",
+        "slogan": "Draw your dreams into reality!",
+        "msrp": 3999,
+        "img": "22.png"
+    },
+    {
+        "name": "FitTracker Smart Fitness Band",
+        "description": "A smart fitness band that tracks steps, heart rate, and sleep patterns. Features a touch screen and is water-resistant. Syncs with smartphones for detailed health insights.",
+        "slogan": "Track your fitness journey, step by step!",
+        "msrp": 4999,
+        "img": "23.png"
+    },
+    {
+        "name": "PetPals Interactive Pet Camera",
+        "description": "A pet camera that lets you monitor and interact with your pets remotely. Features two-way audio, treat dispensing, and a laser toy. Connects to your smartphone for live streaming.",
+        "slogan": "Stay connected with your furry friends!",
+        "msrp": 8999,
+        "img": "24.png"
+    },
+    {
+        "name": "DreamDome Star Projector",
+        "description": "A home planetarium that projects a starry night sky onto your ceiling. Features different modes to mimic various cosmic phenomena. Comes with a built-in speaker for ambient sounds.",
+        "slogan": "Bring the universe into your room!",
+        "msrp": 4999,
+        "img": "25.png"
+    },
+    {
+        "name": "SonicBoom Portable Bluetooth Speaker",
+        "description": "A powerful yet compact Bluetooth speaker with deep bass. Water-resistant and durable, ideal for outdoor use. Features a long battery life and hands-free calling.",
+        "slogan": "Experience the boom, wherever you roam!",
+        "msrp": 5999,
+        "img": "26.png"
+    },
+    {
+        "name": "PureAir Mini Air Purifier",
+        "description": "A compact air purifier perfect for small spaces. Utilizes HEPA filters to remove 99.97% of airborne particles. Features a quiet operation mode and USB power supply.",
+        "slogan": "Breathe pure, live more!",
+        "msrp": 2999,
+        "img": "27.png"
+    },
+    {
+        "name": "SmartSeed Digital Plant Monitor",
+        "description": "A digital plant monitor that tracks soil moisture, sunlight, and nutrient levels. Connects to a smartphone app for real-time updates and care tips. Ideal for gardening enthusiasts.",
+        "slogan": "Know your plants, grow your plants!",
+        "msrp": 2499,
+        "img": "28.png"
+    },
+    {
+        "name": "FlashBrite Rechargeable Bike Light",
+        "description": "A rechargeable bike light with multiple brightness settings and flashing modes. Easy to attach and remove. Weather-resistant and durable for safe cycling.",
+        "slogan": "Ride bright, day or night!",
+        "msrp": 1999,
+        "img": "29.png"
+    }
+]

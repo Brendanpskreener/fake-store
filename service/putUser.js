@@ -16,8 +16,9 @@ async function handler(event) {
     const item = {
       pk: `user#${uuid}`,
       sk: `user#${uuid}`,
+      type: 'user',
       created: (new Date()).getTime(),
-      uid: uuid,
+      userId: uuid,
       firstName,
       lastName,
       email

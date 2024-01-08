@@ -9,16 +9,16 @@ deleteUserFavorite:
         method: DELETE
         path: /user/{userId}/favorite
 
-getProducts:
-  handler: service/getProducts.handler
-  name: getProducts
+getProduct:
+  handler: service/getProduct.handler
+  name: getProduct
   memorySize: 128
   url:
     cors: true
   events:
     - httpApi:
         method: GET
-        path: /products
+        path: /product/{productId}
 
 getUser: 
   handler: service/getUser.handler
