@@ -10,6 +10,19 @@ provider:
   region: us-west-2
   runtime: nodejs18.x
   environment: ${file(resources/env.yml):environment}
+  iam:
+    role:
+      statements:
+            - Effect: Allow
+              Action:
+                - dynamodb:Query
+                - dynamodb:GetItem
+                - dynamodb:PutItem
+                - dynamodb:UpdateItem
+                - dynamodb:DeleteItem
+              Resource:
+                - arn:aws:dynamodb:us-west-2:*:table/fakeStoreTable
+                - arn:aws:dynamodb:us-west-2:*:table/fakeStoreTable/index/*
 
 plugins: 
   - serverless-offline
