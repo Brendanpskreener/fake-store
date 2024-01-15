@@ -1,0 +1,21 @@
+Resources:
+  FakeStoreDomain:
+    Type: 'AWS::OpenSearchService::Domain'
+    Properties:
+      DomainName: FakeStoreDomain
+      EngineVersion: OpenSearch_2.5
+      ClusterConfig:
+        InstanceType: t2.micro.search
+        InstanceCount: 1
+      EncryptionAtRestOptions: 
+          Enabled: true
+      NodeToNodeEncryptionOptions:
+          Enabled: true
+      DomainEndpointOptions:
+          EnforceHTTPS: true
+      EBSOptions:
+        EBSEnabled: true
+        Iops: 1500
+        Throughput: 20
+        VolumeType: gp3
+        VolumeSize: 1

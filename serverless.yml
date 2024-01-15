@@ -33,3 +33,4 @@ functions:
 resources:
   - ${file(resources/dynamo.yml)}
   - ${file(resources/s3.yml)}
+  - ${file(resources/opensearch.yml)}
