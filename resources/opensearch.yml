@@ -2,7 +2,7 @@ Resources:
   FakeStoreDomain:
     Type: 'AWS::OpenSearchService::Domain'
     Properties:
-      DomainName: FakeStoreDomain
+      DomainName: fake-store-domain
       EngineVersion: OpenSearch_2.5
       ClusterConfig:
         InstanceType: t2.micro.search
