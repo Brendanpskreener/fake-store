@@ -5,7 +5,7 @@ Resources:
       DomainName: fake-store-domain
       EngineVersion: OpenSearch_2.5
       ClusterConfig:
-        InstanceType: t2.micro.search
+        InstanceType: t3.small.search
         InstanceCount: 1
       EncryptionAtRestOptions: 
           Enabled: true
@@ -15,7 +15,7 @@ Resources:
           EnforceHTTPS: true
       EBSOptions:
         EBSEnabled: true
-        Iops: 1500
-        Throughput: 20
+        Iops: 3000
+        Throughput: 125
         VolumeType: gp3
-        VolumeSize: 1
+        VolumeSize: 10
