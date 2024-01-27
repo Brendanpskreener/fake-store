@@ -27,9 +27,9 @@ function deleteItem() {
   return ddbDocClient.send(command)
 }
 
-function query() {
+function query(query) {
   //there will probably be a dowhile loop in here
-  const command = new QueryCommand()
+  const command = new QueryCommand(query)
   return ddbDocClient.send(command)
 }
 

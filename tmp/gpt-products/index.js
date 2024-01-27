@@ -19,7 +19,8 @@ async function main() {
 
 
   // Map product data and image buffers
-  const json = await fs.readFile(path.join(BASE_PATH, './gpt-products.json'), { encoding: 'utf8' });
+  const dataPath = path.join(BASE_PATH, './gpt-products.json')
+  const json = await fs.readFile(dataPath, { encoding: 'utf8' });
   const jsonProducts = JSON.parse(json);
 
   const promises = jsonProducts.map(async (product) => {

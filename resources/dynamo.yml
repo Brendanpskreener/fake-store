@@ -30,7 +30,7 @@ Resources:
           ProvisionedThroughput:
             ReadCapacityUnits: 1
             WriteCapacityUnits: 1
-        - IndexName: type-lookup
+        - IndexName: child-lookup-by-type
           KeySchema:
             - AttributeName: pk
               KeyType: HASH
@@ -47,6 +47,26 @@ Resources:
               KeyType: HASH
             - AttributeName: pk
               KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: 1
+            WriteCapacityUnits: 1
+        - IndexName: parent-lookup
+          KeySchema:
+            - AttributeName: sk
+              KeyType: HASH
+            - AttributeName: pk
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: 1
+            WriteCapacityUnits: 1
+        - IndexName: type-lookup
+          KeySchema:
+            - AttributeName: type
+              KeyType: HASH
           Projection:
             ProjectionType: ALL
           ProvisionedThroughput:

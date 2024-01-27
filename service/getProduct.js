@@ -2,7 +2,7 @@ const { getItem } = require("./common/dynamolib")
 
 async function handler(event) {
   try {
-    //Parse userID out of event
+    //Parse productID out of event
     const { pathParameters: { productId } } = event
     // Build query
     const key = {

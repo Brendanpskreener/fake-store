@@ -19,3 +19,4 @@ Resources:
         Throughput: 125
         VolumeType: gp3
         VolumeSize: 10
+        
