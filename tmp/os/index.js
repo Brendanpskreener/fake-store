@@ -2,8 +2,7 @@ const { defaultProvider } = require('@aws-sdk/credential-provider-node'); // V3 
 const { Client } = require('@opensearch-project/opensearch');
 const { AwsSigv4Signer } = require('@opensearch-project/opensearch/aws');
 
-const fs = require('node:fs/promises');
-const path = require('node:path');
+const { getProducts } = require('../../service/common/dynamolib');
 
 const INDEX_NAME = 'fakestoreproducts';
 
@@ -20,9 +19,7 @@ const client = new Client({
 });
 
 async function main() {
-  const dataPath = path.join(__dirname, 'data.json');
-  const jsonBuf = await fs.readFile(dataPath, { encoding: 'utf8' });
-  const products = JSON.parse(jsonBuf);
+  const products = await getProducts()
 
   try {
     // Bulk index into OS

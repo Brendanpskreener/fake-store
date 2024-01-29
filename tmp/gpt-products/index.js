@@ -4,6 +4,7 @@ const { DynamoDBClient } = require("@aws-sdk/client-dynamodb");
 const { PutCommand, DynamoDBDocumentClient } = require("@aws-sdk/lib-dynamodb");
 const { PutObjectCommand, S3Client } = require("@aws-sdk/client-s3")
 const { v4: uuidv4 } = require('uuid');
+const { getBlurHash } = require("../../service/common/utilities")
 
 const BASE_PATH = path.join(__dirname)
 
@@ -26,19 +27,22 @@ async function main() {
   const promises = jsonProducts.map(async (product) => {
     const { img, ...rest } = product;
     const uuid = uuidv4();
-    const imgbuf = await fs.readFile(path.join(BASE_PATH, img));
+    const imgBuffer = await fs.readFile(path.join(BASE_PATH, img));
+    const blurHash = await getBlurHash(imgBuffer)
+
     const productQuery = {
       Item: {
         ...rest,
         pk: `product#${uuid}`,
         sk: `product#${uuid}`,
         type: 'product',
+        blurHash,
         productId: uuid
       },
       TableName: 'fakeStoreTable'
     }
     const imgQuery = {
-      Body: imgbuf,
+      Body: imgBuffer,
       Bucket: 'fake-store-media',
       Key: uuid,
       ContentType: 'image/png'

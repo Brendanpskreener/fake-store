@@ -38,6 +38,17 @@ function getItem(query) {
   return ddbDocClient.send(command)
 }
 
+async function getProducts() {
+  const query = {
+    TableName: 'fakeStoreTable',
+    IndexName: 'type-lookup',
+    ExpressionAttributeNames: { '#T': 'type' },
+    ExpressionAttributeValues: { ':product': 'product' },
+    KeyConditionExpression: "#T = :product"
+  }
+  const command = new QueryCommand(query)
+  const { Items: products } = await ddbDocClient.send(command)
+  return products
+}
 
-
-module.exports = { putItem, getItem, deleteItem, query }
+module.exports = { putItem, getItem, deleteItem, query, getProducts }
