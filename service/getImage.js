@@ -5,7 +5,7 @@ async function handler(event) {
     //parse productId
     const { pathParameters: { productId } } = event
     //send command
-    const { ContentType, object } = getObject(productId)
+    const { ContentType, object } = await getObject(productId)
     const image = Buffer.from(object).toString('base64')
 
     //send response
