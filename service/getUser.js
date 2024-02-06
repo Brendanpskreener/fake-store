@@ -4,7 +4,6 @@ async function handler(event) {
   try {
     //Parse userID out of event
     const { pathParameters: { userId } } = event
-
     // Build query
     const key = {
       pk: `user#${userId}`,
@@ -14,11 +13,9 @@ async function handler(event) {
       TableName: process.env.TABLE_NAME,
       Key: key
     }
-
     //send query
     const response = await getItem(query)
     const { pk, sk, type, created, ...user } = response.Item
-
     // send response
     return {
       statusCode: 200,

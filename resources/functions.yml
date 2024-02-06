@@ -2,8 +2,6 @@ deleteUserFavorite:
   handler: service/deleteUserFavorite.handler
   name: deleteUserFavorite
   memorySize: 128
-  url:
-    cors: true
   events:
     - httpApi:
         method: DELETE
@@ -13,8 +11,6 @@ getProduct:
   handler: service/getProduct.handler
   name: getProduct
   memorySize: 128
-  url:
-    cors: true
   events:
     - httpApi:
         method: GET
@@ -24,8 +20,6 @@ getProducts:
   handler: service/getProducts.handler
   name: getProducts
   memorySize: 128
-  url:
-    cors: true
   events:
     - httpApi:
         method: GET
@@ -35,8 +29,6 @@ getImage:
   handler: service/getImage.handler
   name: getImage
   memorySize: 128
-  url:
-    cors: true
   events:
     - httpApi:
         method: GET
@@ -46,8 +38,6 @@ getUser:
   handler: service/getUser.handler
   name: getUser
   memorySize: 128
-  url:
-    cors: true
   events: 
     - httpApi:
         method: GET
@@ -57,8 +47,6 @@ getUserFavorites:
   handler: service/getUserFavorites.handler
   name: getUserFavorites
   memorySize: 128
-  url:
-    cors: true
   events: 
     - httpApi:
         method: GET
@@ -68,19 +56,15 @@ putUser:
   handler: service/putUser.handler
   name: putUser
   memorySize: 128
-  url:
-    cors: true
   events:
     - httpApi:
         method: POST
         path: /user
 
 putUserFavorites: 
-  handler: service/putUserFavorites.handler
+  handler: service/putUserFavorite.handler
   name: putUserFavorites
   memorySize: 128
-  url:
-    cors: true
   events: 
     - httpApi:
         method: POST

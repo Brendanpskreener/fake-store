@@ -16,7 +16,6 @@ async function handler(event) {
     //send query
     const response = await getItem(query)
     const { pk, sk, type, ...product } = response.Item
-
     // send response
     return {
       statusCode: 200,

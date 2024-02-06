@@ -38,6 +38,19 @@ function getItem(query) {
   return ddbDocClient.send(command)
 }
 
+async function getFavorites(userId) {
+  const query = {
+    TableName: 'fakeStoreTable',
+    IndexName: 'child-lookup-by-type',
+    ExpressionAttributeNames: { '#T': 'type' },
+    ExpressionAttributeValues: { ':pkval': `user#${userId}`, ':userfav': 'user-favorite' },
+    KeyConditionExpression: "pk = :pkval AND #T = :userfav"
+  }
+  const command = new QueryCommand(query)
+  const { Items: favorites } = await ddbDocClient.send(command)
+  return favorites
+}
+
 async function getProducts() {
   const query = {
     TableName: 'fakeStoreTable',
@@ -51,4 +64,4 @@ async function getProducts() {
   return products
 }
 
-module.exports = { putItem, getItem, deleteItem, query, getProducts }
+module.exports = { putItem, getItem, deleteItem, query, getProducts, getFavorites }

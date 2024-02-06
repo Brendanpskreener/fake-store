@@ -17,7 +17,8 @@ async function handler(event) {
       pk: `user#${userId}`,
       sk: `product#${productId}`,
       created: (new Date()).getTime(),
-      type: 'user-favorite'
+      type: 'user-favorite',
+      productId: productId
     }
 
     const query = {
@@ -33,7 +34,8 @@ async function handler(event) {
       statusCode: 201,
       headers: {
         Location: `/user${userId}/favorite`,
-        'Access-Control-Expose-Header': 'Location'
+        'Access-Control-Expose-Header': 'Location',
+        'Access-Control-Allow-Origin': '*'
       }
     }
 

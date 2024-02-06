@@ -5,6 +5,8 @@ package:
     - '!tmp/**'
 
 provider: 
+  httpApi:
+    cors: true
   name: aws
   stage: dev
   region: us-west-2
