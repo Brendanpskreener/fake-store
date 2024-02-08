@@ -22,8 +22,8 @@ function putItem(query) {
   return ddbDocClient.send(command)
 }
 
-function deleteItem() {
-  const command = new DeleteCommand()
+function deleteItem(query) {
+  const command = new DeleteCommand(query)
   return ddbDocClient.send(command)
 }
 

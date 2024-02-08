@@ -16,9 +16,14 @@ const client = new Client({
 });
 
 async function handler(event) {
-  const { from = 0, size = 10 } = event?.queryStringParameters || {};
+  const { from = 0, size = 10, productIds } = event?.queryStringParameters || {};
   const fromNum = parseInt(from, 10);
   const sizeNum = parseInt(size, 10);
+  const config = productIds?.length >= 0 ? {
+    terms: {
+      "productId.keyword": productIds.split(',')
+    }
+  } : { match_all: {} }
 
   try {
     //send query
@@ -28,7 +33,7 @@ async function handler(event) {
         from: fromNum,
         size: sizeNum,
         sort: [{ msrp: 'desc' }],
-        query: { match_all: {} }
+        query: config
       }
     });
 
