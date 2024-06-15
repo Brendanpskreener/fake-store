@@ -1,0 +1,23 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Create User",
+      "program": "${workspaceFolder}/node_modules/.bin/serverless",
+      "args": [
+        "invoke",
+        "local",
+        "-f",
+        "putUser",
+        "-p",
+        "__dev__/local-events/putUser.event.js"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
