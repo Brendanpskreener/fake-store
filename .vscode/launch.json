@@ -18,6 +18,21 @@
         "__dev__/local-events/putUser.event.js"
       ],
       "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Get User",
+      "program": "${workspaceFolder}/node_modules/.bin/serverless",
+      "args": [
+        "invoke",
+        "local",
+        "-f",
+        "getUser",
+        "-p",
+        "__dev__/local-events/getUser.event.js"
+      ],
+      "console": "integratedTerminal"
     }
   ]
 }
