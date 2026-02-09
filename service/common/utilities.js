@@ -7,4 +7,15 @@ async function getBlurHash(imageBuffer, compX = 4, compY = 4) {
   return blurHash
 }
 
-module.exports = { getBlurHash }
+function createResponse(statusCode, data, additionalHeaders = {}) {
+  return {
+    statusCode,
+    body: data && JSON.stringify(data),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      ...additionalHeaders
+    }
+  }
+}
+
+module.exports = { getBlurHash, createResponse }
